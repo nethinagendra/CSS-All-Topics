@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome_5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/animate.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: white url("img/image5.jpeg") no-repeat fixed bottom;
+
+        }
+        .form-div{
+            width: 220px;
+            text-align: center;
+            margin: 150px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #978168;
+            background-color: rgba(0,0,0,0.5);
+            border: none;
+            padding: 10px;
+        }
+        .form-div h2{
+            color: #a5998b;
+        }
+        .fa{
+            border: 5px solid #978168;
+            border-radius: 50%;
+            box-shadow: 0 0 5px black;
+            margin-top: -50px;
+        }
+        .input-field{
+            text-align: center;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            height: 35px;
+            width: 200px;
+            margin: 5px;
+            background: transparent;
+            color: white;
+            border-bottom: 3px solid #695d52;
+        }
+        .input-field:focus{
+            border-bottom: 3px solid #978168;
+        }
+        #login-btn{
+            background-color: #695d52;
+            color: white;
+            font-size: 18px;
+            padding: 10px 50px;
+            border: none;
+            outline: none;
+            margin: 10px;
+            border-radius: 50px;
+            box-shadow: 0 0 5px black;
+        }
+        #login-btn:hover{
+            background-color: #978168;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div class="form-div animated jackInTheBox" >
+        <i class="fa fa-user-circle fa fa-5x"></i>
+        <h2>Login Here</h2>
+        <form>
+            <input type="text" placeholder="User Name" class="input-field">
+            <br>
+            <input type="password" placeholder="Password" class="input-field">
+            <br>
+            <input type="submit" value="Login" id="login-btn">
+        </form>
+    </div>
+
+</body>
+</html>

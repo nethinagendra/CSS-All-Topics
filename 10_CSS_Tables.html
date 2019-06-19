@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS TABLES</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+        }
+        table{
+            width: 100%;
+        }
+        table th,td{
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            text-align: center;
+        }
+        th{
+            background-color: darkred;
+            color: white;
+        }
+        td:hover{
+            background: linear-gradient(60deg,black,red,black);
+            color: white;
+        }
+        tr:nth-child(even){
+            background-color:lightsalmon;
+        }
+        tr:nth-child(odd){
+            background-color:coral;
+        }
+        th,td{
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            box-shadow: 0 0 5px black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CUSTOM TABLE -->
+    <table>
+        <tr>
+            <th>Emp Name</th>
+            <th>Designation</th>
+            <th>Company</th>
+        </tr>
+        <tr>
+            <td>Nagendra</td>
+            <td>Software Engineer</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td>Nagasahithi</td>
+            <td>Software Engineer</td>
+            <td>Google</td>
+        </tr>
+        <tr>
+            <td>Nandini</td>
+            <td>Software Engineer</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td>Muna</td>
+            <td>Software Engineer</td>
+            <td>Google</td>
+        </tr>
+        <tr>
+            <td>likitha</td>
+            <td>Software Engineer</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td>Benny</td>
+            <td>Software Engineer</td>
+            <td>Google</td>
+        </tr>
+    </table>
+</body>
+</html>

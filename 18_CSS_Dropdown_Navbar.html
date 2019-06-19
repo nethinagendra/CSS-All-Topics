@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Dropdown Navbar</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome_5.8.1.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .d_list{
+            background:linear-gradient(45deg,black,orangered);
+            padding: 14px 55px;
+        }
+        nav{
+            background:linear-gradient(45deg,black,orangered);
+            padding: 5px;
+        }
+        nav a{
+            text-decoration: none;
+            padding: 14px 25px;
+            color: white;
+            display: inline-block;
+        }
+        nav a:hover{
+            background:linear-gradient(45deg,orangered,black);
+        }
+        .dropdown{
+            display: inline-block;
+        }
+        .d_list{
+            position: absolute;
+            background:linear-gradient(45deg,black,orangered);
+            padding: 5px;
+            display: none;
+        }
+        .d_list a{
+            display: block;
+        }
+        .dropdown:hover .d_list{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Dropdown Navbar -->
+    <nav>
+        <a href="#"><i class="fa fa-home"></i> Home</a>
+        <a href="#">
+            <i class="fa fa-id-badge"></i> About Us</a>
+        <a href="#">
+            <i class="fa fa-envelope"></i> Contact Us</a>
+        <a href="#">
+            <i class="fa fa-graduation-cap"></i> Careers</a>
+        <div class="dropdown">
+            <a href="#">
+                <i class="fa fa-book"></i> Courses <i class="fa fa-caret-down"></i></a>
+        <div class="d_list">
+        <a href="#">Html</a>
+        <a href="#">CSS</a>
+        <a href="#">javaScript</a>
+        <a href="#">JQuery</a>
+        <a href="#">AJAX</a>
+        <a href="#">Bootstrap</a>
+        <a href="#">Angular JS</a>
+        </div>
+    </nav>
+
+</body>
+</html>
